@@ -84,7 +84,6 @@ body::-webkit-scrollbar{
 }
 .sub_greetings{
     font-size: 1rem;
-    opacity: .5;
     margin: 10px 0 20px 0;
 }
 .cv_btn{
