@@ -81,6 +81,7 @@ body::-webkit-scrollbar{
 .greetings_message{
     font-size: 7rem;
     font-weight: 700;
+    opacity: .5;
 }
 .sub_greetings{
     font-size: 1rem;
