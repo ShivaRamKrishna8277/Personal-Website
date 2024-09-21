@@ -32,6 +32,7 @@ body::-webkit-scrollbar{
 .section:nth-of-type(even){
     color: black !important;
     background-color: #fff !important;
+text-align: center !important;
 }
 /* Containers */
 .content-container{
