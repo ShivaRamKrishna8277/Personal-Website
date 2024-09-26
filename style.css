@@ -1,27 +1,41 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: 'monts-alt';
-    src: url('assets/fonts/webfonts/MontserratAlt1-SemiBold.woff2') format('woff2'), /* Modern Browsers */
-         url('assets/fonts/webfonts/MontserratAlt1-SemiBold.woff') format('woff');   /* Older Browsers */
+    src: url('assets/fonts/webfonts/MontserratAlt1-SemiBold.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('assets/fonts/webfonts/MontserratAlt1-SemiBold.woff') format('woff');
+    /* Older Browsers */
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
-.hero_section{
+
+.hero_section {
     background: url(assets/landing\ BG.svg) !important;
+    position: relative;
+}
+
+#scrollIcon {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
 }
 
 /* Sections */
-.section{
+.section {
     height: 100vh;
     width: 100%;
     min-height: 500px;
@@ -29,13 +43,15 @@ body::-webkit-scrollbar{
     color: white;
     background-color: #1a1b1f;
 }
-.section:nth-of-type(even){
+
+.section:nth-of-type(even) {
     color: black !important;
     background-color: #fff !important;
-text-align: center !important;
+    text-align: center !important;
 }
+
 /* Containers */
-.content-container{
+.content-container {
     position: absolute;
     top: 0;
     right: 0;
@@ -44,7 +60,8 @@ text-align: center !important;
     z-index: 2;
     clip: rect(auto, auto, auto, auto);
 }
-.content-inner{
+
+.content-inner {
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +78,8 @@ text-align: center !important;
     perspective: 1000;
     pointer-events: all;
 }
-.content-center{
+
+.content-center {
     height: 100%;
     display: flex;
     align-items: center;
@@ -71,7 +89,7 @@ text-align: center !important;
 
 
 
-.hero_section .content-container{
+.hero_section .content-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,17 +97,20 @@ text-align: center !important;
     height: 100vh;
     text-align: center;
 }
-.greetings_message{
+
+.greetings_message {
     font-size: 7rem;
     font-weight: 700;
     opacity: .5;
 }
-.sub_greetings{
+
+.sub_greetings {
     font-size: 1rem;
     margin: 10px 0 20px 0;
     opacity: 1;
 }
-.cv_btn{
+
+.cv_btn {
     background: white;
     padding: 10px 30px;
     border-radius: 5px;
@@ -98,43 +119,52 @@ text-align: center !important;
     font-weight: 600;
     color: black;
 }
-.proj_title{
+
+.proj_title {
     font-size: 6rem;
     text-shadow: 6px 6px 10px #1a1b1f64;
     margin-bottom: 10px;
     position: relative;
 }
-.section:nth-of-type(odd) .proj_title{
+
+.section:nth-of-type(odd) .proj_title {
     text-shadow: 6px 6px 10px #454444;
 }
-.proj_desc{
+
+.proj_desc {
     text-align: center;
     width: 85%;
     font-size: 1.1rem;
     font-weight: 500;
     opacity: .5;
 }
-.proj_link{
+
+.proj_link {
     display: inline-block;
     margin: 20px 0;
     font-weight: 600;
     color: #0084FF;
 }
-@media(max-width:992px){
-    .greetings_message{
+
+@media(max-width:992px) {
+    .greetings_message {
         font-size: 3rem;
     }
-    .sub_greetings{
+
+    .sub_greetings {
         font-size: .8rem;
     }
-    .cv_btn{
+
+    .cv_btn {
         width: 50%;
     }
-    .proj_title{
+
+    .proj_title {
         font-size: 2.2rem;
         position: relative;
     }
-    .proj_desc{
+
+    .proj_desc {
         width: 95%;
         font-size: .8rem;
     }
